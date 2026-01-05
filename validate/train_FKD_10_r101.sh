@@ -1,0 +1,13 @@
+python train_FKD_parallel.py \
+    --wandb-project 'val_rn101_imnet_10' \
+    --batch-size 50 \
+    --gradient-accumulation-steps 2 \
+    --model resnet101 \
+    --cos --loss-type "mse_gt" --ce-weight 0.1 \
+    -j 4 \
+    -T 20 \
+    --mix-type 'cutmix' \
+    --output-dir ./save/val_rn101_imnet_10/ \
+    --train-dir /netscratch/bmoser/sre2l/recover/syn_data/full_r101/ \
+    --val-dir /ds-sds/images/imagenet/val/ \
+    --fkd-path /netscratch/bmoser/sre2l/relabel/FKD_prism_r101/

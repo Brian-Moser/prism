@@ -1,0 +1,11 @@
+python data_synthesis.py \
+    --arch-name "resnet50" \
+    --exp-name "full_r50_10" \
+    --train-data-path "/ds-sds/images/imagenet/train" \
+    --batch-size 100 \
+    --lr 0.05 \
+    --iteration 4000 \
+    --l2-scale 0 --tv-l2 0 --r-bn 0.01 \
+    --verifier --store-best-images \
+    --ipc-start 0 \
+    --ipc-end   10
