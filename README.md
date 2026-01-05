@@ -1,7 +1,8 @@
 # PRISM: Diversifying Dataset Distillation by Decoupling Architectural Priors
 
-Official PyTorch implementation of paper (TMLR'26) PRISM : Diversifying Dataset Distillation by Decoupling Architectural Priors
+Official PyTorch implementation of paper (TMLR'26) PRISM : Diversifying Dataset Distillation by Decoupling Architectural Priors. 
 
+[`[arXiv]`](https://arxiv.org/abs/2511.09905)
 
 ## Abstract
 
